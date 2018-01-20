@@ -1,0 +1,27 @@
+{
+    "name": "electron-app-tpl",
+    "version": "1.0.0",
+    "description": "Electron app template",
+    "main": "src/main.js",
+    "dependencies": {
+        "jquery": "^3.3.0"
+    },
+    "devDependencies": {
+        "electron": "^1.7.10",
+        "electron-builder": "^19.54.0",
+        "gulp": "^3.9.1",
+        "semantic-ui": "^2.2.13"
+    },
+    "scripts": {
+        "theme": "cd semantic && gulp build",
+        "start": "electron .",
+        "build": "electron-builder",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "build": {
+        "appId": "electronapptpl.afonsodev"
+    },
+    "keywords": [],
+    "author": "Marco Afonso",
+    "license": "ISC"
+}

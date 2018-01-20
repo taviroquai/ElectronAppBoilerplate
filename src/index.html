@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" type="text/css" href="assets/dist/semantic.min.css">
+    <script type="text/javascript">
+    window.$ = window.jQuery = require('jquery');
+    </script>
+    <script src="assets/dist/semantic.min.js"></script>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <select name="skills" class="ui fluid search dropdown">
+        <option value="">Skills</option>
+        <option value="react" selected>React</option>
+        <option value="angular" selected>Angular</option>
+    </select>
+    <button class="ui labeled icon button">
+        <i class="pause icon"></i>Button
+    </button>
+
+    We are using node <script>document.write(process.versions.node)</script>,
+    Chrome <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+    <script type="text/javascript">
+    const App = require('./app')
+    var app = new App(window);
+    </script>
+</body>
+</html>
